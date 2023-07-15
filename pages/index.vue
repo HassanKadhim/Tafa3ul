@@ -1,13 +1,21 @@
 <template>
     <div>
         new
-        <h1 v-for="item in x" :key="item">{{ item }}</h1>
+        <ul>
+            <li v-for="item in x">{{ item }} <button @click="removeName(item)"> dd</button> </li>
+        </ul>
     </div>
 </template>
 
 <script setup >
-const x = ref([1, 2, 3, 4])
+const x = ref(
+    ['hussam', 'ali']
+)
 
+
+const removeName = (name) => {
+    alert(name)
+}
 
 
 </script>
