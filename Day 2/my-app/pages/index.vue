@@ -1,6 +1,5 @@
 <template>
     <div>
-        new
         <h1 v-for="item in x" :key="item">{{ item }}</h1>
     </div>
 </template>
